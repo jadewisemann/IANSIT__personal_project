@@ -1,4 +1,5 @@
-function NavItem ({content}) {
+import ModalOpenButton from "./ModalOpenButton";
+function NavItem({ content }) {
     return <a className="nav-item {content}" href=""> {content}</a>
 }
 
@@ -6,9 +7,7 @@ function NavItem ({content}) {
 export default function MainNav() {
     return (
         <div className="main-nav">
-            <NavItem content={"home"} /> 
-            <NavItem content={"add server"} /> 
-            <NavItem content={"manage server"} />  
+            <ModalOpenButton title={"add server"} />
         </div>
     );
 }
